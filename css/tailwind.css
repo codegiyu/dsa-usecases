@@ -55,7 +55,7 @@ html {
     @apply w-full border border-slate-400 shadow py-8 px-6 rounded-lg bg-green
 }
 .result {
-    @apply w-full border border-slate-400 bg-neutral text-dark p-5 rounded-lg font-sen
+    @apply w-full border border-slate-400 bg-neutral text-dark rounded-lg font-sen
 }
 .input {
     @apply outline-none border border-dark hover:border-blue focus:border-blue active:border-blue

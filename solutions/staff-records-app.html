@@ -15,8 +15,8 @@
     <header class="w-full fixed top-0 left-0">
         <section class="w-full bg-blue text-white py-3 md:py-5 flex justify-between items-center px-5 lg:px-20">
             <a href="../index.html">
-                <div class="w-[50px] aspect-square rounded-full bg-green flex justify-center">
-                    <span class="font-workSans font-black text-5xl text-blue leading-[50px] text-center">C</span>
+                <div class="w-[3rem] aspect-square rounded-full bg-green flex justify-center">
+                    <span class="font-workSans font-black text-3xl text-blue leading-[3rem] text-center">C</span>
                 </div>
             </a>
             <nav class="hidden lg:block">
@@ -79,8 +79,8 @@
                 <div class="aside-top w-full">
                     <div class="w-full flex justify-between pb-6">
                         <a href="../index.html">
-                            <div class="w-[50px] aspect-square rounded-full bg-green flex justify-center">
-                                <span class="font-workSans font-black text-5xl text-blue leading-[50px] text-center">C</span>
+                            <div class="w-[3rem] aspect-square rounded-full bg-green flex justify-center">
+                                <span class="font-workSans font-black text-3xl text-blue leading-[3rem] text-center">C</span>
                             </div>
                         </a>
                         <button class="menu-close-btn bg-transparent">
@@ -166,8 +166,57 @@
         </section>
     </header>
 
-    <main class="min-h-[calc(100vh-120px)] mt-24 mb-16 flex items-center py-10 px-5 lg:px-20">
-        
+    <main class="min-h-[calc(100vh-7rem)] mt-24 mb-16 flex items-center py-10 px-5 lg:px-20">
+        <section class="w-full flex justify-center">
+            <section class="w-full md:w-[500px] lg:w-[700px]">
+                <div class="interface">
+                    <h2 class="instruction text-lg font-medium">
+                        Enter 1 <b>to sort by First Name</b>
+                    </h2>
+                    <h2 class="instruction text-lg font-medium">
+                        Enter 2 <b>to sort by Last Name</b>
+                    </h2>
+                    <h2 class="instruction text-lg font-medium">
+                        Enter 3 <b>to sort by Age</b>
+                    </h2>
+                    <form class="w-full flex justify-center items-center flex-wrap gap-4 font-sen text-base mt-4">
+                        <input type="number" name="" id="" min="1" max="3" class="input flex-[1_0_300px] py-3 px-4 bg-white rounded">
+                        <button type="submit" class="bg-blue flex-none py-3 px-6 text-white font-medium rounded">
+                            Enter
+                        </button>
+                    </form>
+                </div>
+                <div class="result py-5 px-1 mt-2">
+                    <table class="w-full table table-fixed border-collapse border-spacing-[1px] rounded-lg overflow-hidden border border-blue">
+                        <colgroup>
+                            <col width="10%" />
+                            <col width="39%" />
+                            <col width="39%" />
+                            <col width="12%" />
+                        </colgroup>
+                        <thead class="font-workSans  text-base text-white text-left">
+                            <tr class="bg-blue ">
+                                <th class="">
+                                    <p class="pl-1 font-medium">S/N</p>
+                                </th>
+                                <th class="">
+                                    <p class="font-medium">First Name</p>
+                                </th>
+                                <th class="">
+                                    <p class="font-medium">Last Name</p>
+                                </th>
+                                <th class="">
+                                    <p class="font-medium">Age</p>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody class="table-body font-sen text-dark">
+                    
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </section>
     </main>
 
     <footer class="w-full bg-blue py-3 px-5 lg:px-20 flex justify-center font-sen fixed bottom-0 z-50">
