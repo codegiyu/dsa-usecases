@@ -28,7 +28,7 @@ const matchingWordsApp = (() => {
             e.preventDefault()
             let word = input.value.toLowerCase()
             const {matchedWords, leftOverLetters} = helpers.getMatchedWords(word)
-            // console.log(word, matchedWords, leftOverLetters)
+            
             let matchedWordsHalf = "", leftOversHalf = ""
 
             if (matchedWords.length < 1) {
