@@ -170,18 +170,33 @@
         <section class="w-full flex justify-center">
             <section class="w-full md:w-[500px] lg:w-[700px]">
                 <div class="interface">
-                    <h1 class="instruction text-lg font-semibold">
-                        Enter a word to see its number of occurences
-                    </h1>
-                    <form class="w-full flex justify-center items-center flex-wrap gap-4 font-sen text-base mt-4">
-                        <input type="text" name="" id="" class="input flex-[1_0_300px] py-3 px-4 bg-white rounded">
+                    <h2 class="instruction text-lg font-medium">
+                        Enter 1 to <b>check account balance</b>
+                    </h2>
+                    <h2 class="instruction text-lg font-medium">
+                        Enter 2 to <b>check account details</b>
+                    </h2>
+                    <h2 class="instruction text-lg font-medium">
+                        Enter 3 to <b>print last 3 transactions</b>
+                    </h2>
+                    <h2 class="instruction text-lg font-medium">
+                        Enter 4 to <b>change phone number</b>
+                    </h2>
+                    <h2 class="instruction text-lg font-medium">
+                        Enter 0 at any point to <b>return to main menu</b>
+                    </h2>
+                    <form class="w-full flex justify-center items-end flex-wrap gap-4 font-sen text-base mt-10">
+                        <label for="input" class="flex-[1_0_300px] flex flex-col gap-1">
+                            <span class="input-label font-medium">Enter Command</span>
+                            <input type="number" name="input" id="input" min="0" max="4" class="input py-3 px-4 bg-white rounded" required>
+                        </label>
                         <button type="submit" class="bg-blue flex-none py-3 px-6 text-white font-medium rounded">
                             Enter
                         </button>
                     </form>
                 </div>
-                <div class="result mt-2 hidden">
-    
+                <div class="result p-5 mt-2 hidden">
+                    
                 </div>
             </section>
         </section>
