@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;700&family=Work+Sans:wght@400;500;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    font-size: 12px;
+    scroll-behavior: smooth;
+}
+@media only screen and (min-width: 768px) {
+    html {
+        font-size: 14px
+    }
+}
+@media only screen and (min-width: 1024px) {
+    html {
+        font-size: 14px
+    }
+}
+@media only screen and (min-width: 1280px) {
+    html {
+        font-size: 16px
+    }
+}
+
+.menu {
+    transform: translateX(-101vw);
+}
+.menu[data-status="active"] {
+    transform: translateX(0);
+}
+.menu-link.active {
+    color: #ABD904;
+    font-weight: 700;
+}
+.accordion-header {
+    @apply w-full border border-slate-400 shadow py-5 px-6 rounded-lg bg-green flex items-center justify-between cursor-pointer
+}
+.accordion-header img {
+    transform: rotate(0deg);
+}
+.accordion-header[data-status="active"] img {
+    transform: rotate(180deg);
+}
+.accordion-body {
+    @apply w-full border border-slate-400 bg-neutral text-dark p-5 rounded-lg font-sen
+}
+.accordion-header + .accordion-body {
+    @apply h-0 p-0 opacity-0 hidden
+}
+.accordion-header[data-status="active"] + .accordion-body {
+    @apply h-auto p-5 opacity-95 block
+}
+.interface {
+    @apply w-full border border-slate-400 shadow py-8 px-6 rounded-lg bg-green
+}
+.result {
+    @apply w-full border border-slate-400 bg-neutral text-dark p-5 rounded-lg font-sen
+}
+.input {
+    @apply outline-none border border-dark hover:border-blue focus:border-blue active:border-blue
+}
